@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
- /* border: 1px solid black;*/
+ border: 1px solid black;
   font-size: 24px;
   color: white;
   font-family: 'EB Garamond', serif;
@@ -23,9 +23,9 @@ header{
 form {
     width: 50%; 
     margin: 0 auto 0 auto;
-   /* display: flex;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;*/
+    flex-wrap: wrap;
     padding: 30px;
     background-color: rgba(27, 27, 50, 0.8);
 }
@@ -34,17 +34,25 @@ header p{
     font-style: italic;
 }
 
-form label {
-    width: 100%;
+div{
+    margin: 10px;
 }
 
-label{
-    margin-bottom: 15px;
-    padding: 10px;
-}
-
-input, select{
+input{
+    display: block;
+    padding: 5px;
+    border: 1px grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
     color: black;
     line-height: 1.2rem;
+}
+
+textarea {
     width: 100%;
 }
+select{
+    color: black;
+    width: 100%;
+}
+
